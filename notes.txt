@@ -1,0 +1,110 @@
+###########------------------les notes du cours python------------###############
+
+**Pour mettre un commentaire, on utilise #
+**Pour encoder un fichier py en UTF-8, on utilise #coding:utf-8
+** compiler un programme python, on utilise : python "nom_du_fichier"
+**Nomination d'une variable:
+	--doit commencer par une lettre ou underscores
+	--ne pas contenir des caractères spéciaux
+	--ne pas contenir d'espaces
+	--utiliser des underscores
+Exemple: meBot, me_Bot, me_bot, mebot, Me_Bot......
+
+*** *** *** *** *** *** Types de Variables *** *** *** *** ***
+mebot = 14 : entier
+mebot2 = "14" : chaine de caractères
+tebot = 0x4581 : hexadecimal
+sibot = 0254 : Octal
+youbot = 25L : Long
+boolbot = True : boolean
+floatbot = 125.32 : float
+
+*** *** *** *** *** Opérations *** *** *** ** *** ***
+	-> + , / , *, -, %
+	
+*** *** *** *** *** Conditions *** *** *** *** ***
+	-> if equivant
+	-> in(pas une )
+	
+*** *** *** *** *** Boucles *** *** *** *** *** ***
+	-> while : tant que
+	-> for : pour 
+	-> switch ...then ... case
+	-> foreach: for pour les tableaux
+
+*** *** *** *** *** Fonctions apprises *** *** *** *** *** ***
+     -> type() : affiche le type de la variable
+     -> str.format() : affiche une variable dans une variable parametré
+     	*-* Exemple:
+     		texte = "you {} me {} "
+		print(texte.format(mebot, floatbot))
+     -> input() : renvoie tout ce qui est saisie par l'utilisateur, type str
+     -> print(); affiche à l'écran
+     -> int(), bool(), str(), float()
+     -> Creation d'une fonction:
+     	-> def me()
+     	-> def boire(nom)
+     	-> def attaque(nom_attaq 
+     -> il existe une autre manieres de déclarer des fonctions:
+     	calculer = lambda a,b : a + b
+     	minuuus = lambda x : x+1 
+     
+*** *** *** *** *** *** Modularité *** *** *** *** *** 
+	-> cinder les fichiers en deux parties
+
+*** *** *** *** *** Gestion des erreurs *** *** *** *** ***
+	-> les types d'erreurs:
+		- type errors
+		- Os erreurs
+		- 0 division error
+		- AssertInsertion error
+		- nameValue Error 
+		- value errors etc...
+		
+	-> Résolutions d'erreurs:
+		- try:
+			code....
+		  execpt:
+		  	code...
+		  else:
+		  	code...
+		  finaly:
+		  	code...
+	 -> Assertion:  ??? exige une condition  
+	 	assert condition...
+	 	
+*** *** *** *** *** Objets *** *** *** *** ***
+	-> Classe: plan de conception, genre (ex: Humain)
+	-> Objet: instance de classe (ex: Julien)
+	-> Atribut: variavle de classe (ex: prenom,age, taille ...)
+	-> Propriété: manière de manipuler les attributs ( lecture seule, accès non autorisé en dehors de la classe, etc ...)
+	-> Méthode: fonction d'une classe (ex: manger())
+	-> Méthode de classe:  fonction d'une classe (explication à venir plus tard)
+	-> Méthode statique:  fonction d'une classe, mais indépendante de celle-ci
+	-> Héritage : classe Fille qui hérite d'une classe Mère
+	
+	
+*** *** *** *** *** Classes et Attributs *** *** *** *** ***
+	-> Creation de classe:
+		class nom_de_classe:
+			code...
+	-> doctrine: documentation de la classe
+		"""
+			....
+		"""
+	->code complet:
+		class nom_de_classe:
+			"""
+				classe des etres vivants
+			"""
+			def __init__(self):
+				pass
+			def manger(self, nourriture):
+				pass
+			def sur(cls, jour):
+				pass
+			sur = classmethod(sur)
+			definition = staticmethod(definition)
+ 
+ 
+     	
